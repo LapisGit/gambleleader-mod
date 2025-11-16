@@ -14,7 +14,7 @@ namespace BeatLeader.Models {
         
         public static string GetName(this BeatLeaderServer server) {
             switch (server) {
-                case BeatLeaderServer.NET_DOMAIN: return "localhost:5000";
+                case BeatLeaderServer.NET_DOMAIN: return "testing local";
                 case BeatLeaderServer.COM_DOMAIN:
                 default: return "gamble.lapis.codes";
             }
@@ -30,9 +30,9 @@ namespace BeatLeader.Models {
 
         public static string GetWebsiteUrl(this BeatLeaderServer server) {
             switch (server) {
-                case BeatLeaderServer.NET_DOMAIN: return "http://localhost:5000";
+                case BeatLeaderServer.NET_DOMAIN: return "http://localhost:8000";
                 case BeatLeaderServer.COM_DOMAIN:
-                default: return "https://gamble.lapis.codes";
+                default: return "https://gambleweb.lapis.codes";
             }
         }
     }
