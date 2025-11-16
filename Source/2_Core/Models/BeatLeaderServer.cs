@@ -14,25 +14,25 @@ namespace BeatLeader.Models {
         
         public static string GetName(this BeatLeaderServer server) {
             switch (server) {
-                case BeatLeaderServer.NET_DOMAIN: return "beatleader.net";
+                case BeatLeaderServer.NET_DOMAIN: return "localhost:5000";
                 case BeatLeaderServer.COM_DOMAIN:
-                default: return "beatleader.com";
+                default: return "gamble.lapis.codes";
             }
         }
 
         public static string GetAPIUrl(this BeatLeaderServer server) {
             switch (server) {
-                case BeatLeaderServer.NET_DOMAIN: return "https://api.beatleader.net";
+                case BeatLeaderServer.NET_DOMAIN: return "http://localhost:5000";
                 case BeatLeaderServer.COM_DOMAIN:
-                default: return "https://api.beatleader.com";
+                default: return "https://gamble.lapis.codes";
             }
         }
 
         public static string GetWebsiteUrl(this BeatLeaderServer server) {
             switch (server) {
-                case BeatLeaderServer.NET_DOMAIN: return "https://beatleader.net";
+                case BeatLeaderServer.NET_DOMAIN: return "http://localhost:5000";
                 case BeatLeaderServer.COM_DOMAIN:
-                default: return "https://beatleader.com";
+                default: return "https://gamble.lapis.codes";
             }
         }
     }
